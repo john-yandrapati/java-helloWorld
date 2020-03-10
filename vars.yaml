@@ -1,0 +1,10 @@
+---
+technology: java
+
+branch: master
+url: 'https://github.com/john-yandrapati/java-helloworld.git'
+
+mvn:
+  command: mvn -B -DskipTests clean package
+  test: mvn test
+  deliver: ./jenkins/scripts/deliver.sh
